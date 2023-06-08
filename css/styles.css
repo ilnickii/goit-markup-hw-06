@@ -469,8 +469,12 @@ body {
   width: 264px;
 }
 
-.footer-soc-text {
-  font-family: "Roboto";
+.soc-box {
+  margin-right: 80px;
+}
+
+.footer-soc-text,
+.footer-form-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -489,6 +493,62 @@ body {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #2e2f42;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 262px;
+  height: 40px;
+  padding: 8px 16px;
+
+  transition: border-color var(--tra);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border-color: #4d5ae5;
+}
+
+.footer-input::placeholder {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-btn {
+  display: inline-flex;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #4d5ae5;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
+  margin-left: 24px;
+  padding: 8px 24px;
+  gap: 16px;
+
+  transition: background-color var(--tra);
+}
+
+.footer-btn-icon {
+  fill: #ffffff;
+}
+
+.footer-btn:focus,
+.footer-btn:hover {
+  background-color: #404bbf;
 }
 
 /* Gallery */
@@ -608,7 +668,7 @@ body {
   border-top: none;
 }
 
-/* MODAL */
+/* Modal */
 
 .backdrop {
   position: fixed;
