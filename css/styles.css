@@ -832,7 +832,7 @@ body {
 .chec-text {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
