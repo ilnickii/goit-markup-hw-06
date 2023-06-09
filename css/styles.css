@@ -497,16 +497,21 @@ body {
   background-color: #31d0aa;
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-input {
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background-color: #2e2f42;
+  background-color: transparent;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 262px;
+  width: 264px;
   height: 40px;
   padding: 8px 16px;
   outline: transparent;
@@ -525,7 +530,9 @@ body {
 }
 
 .footer-btn {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -536,16 +543,16 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  min-width: 165px;
 
-  margin-left: 24px;
   padding: 8px 24px;
-  gap: 16px;
 
   transition: background-color var(--tra);
 }
 
 .footer-btn-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .footer-btn:focus,
@@ -756,7 +763,7 @@ body {
 .form-field-label {
   display: block;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -771,6 +778,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  background-color: transparent;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -785,6 +793,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
+  transition: fill var(--tra);
 }
 
 .form-field-textarea {
@@ -794,15 +803,17 @@ body {
 .textarea {
   resize: none;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   height: 120px;
   width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
   outline: transparent;
+  transition: border-color var(--tra);
 }
 
 .modal-input:focus,
@@ -814,15 +825,18 @@ body {
   fill: #4d5ae5;
 }
 
+.chec-wrap {
+  margin-bottom: 24px;
+}
+
 .chec-text {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 24px;
 }
 
 .chec-text-link {
@@ -840,10 +854,11 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color var(--tra), border var(--tra), fill var(--tra);
 }
 
 .chec-input:checked + .chec-text span {

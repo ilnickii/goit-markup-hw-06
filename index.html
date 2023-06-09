@@ -530,10 +530,10 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
+        <div class="footer-form-wrap">
           <p class="footer-form-text">Subscribe</p>
-          <form name="subscription">
-            <label>
+          <form class="footer-form" name="subscription">
+            <label class="footer-label">
               <input
                 type="email"
                 name="email"
@@ -589,7 +589,7 @@
             </div>
           </div>
           <div class="form-field">
-            <label class="form-field-label" for="user-email">Name</label>
+            <label class="form-field-label" for="user-email">Email</label>
             <div class="input-wraper">
               <input
                 type="email"
@@ -603,23 +603,23 @@
             </div>
           </div>
           <div class="form-field-textarea">
-            <label class="form-field-label" for="comment">Comment</label>
+            <label class="form-field-label" for="user-comment">Comment</label>
             <textarea
               class="textarea"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div>
+          <div class="chec-wrap">
             <input
               class="chec-input visually-hidden"
               type="checkbox"
-              id="privacy"
-              name="privacy"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
             />
-            <label class="chec-text" for="privacy"
+            <label class="chec-text" for="user-privacy"
               ><span class="chec-icon-wrap">
                 <svg class="chec-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-chec"></use>
