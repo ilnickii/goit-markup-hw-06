@@ -830,9 +830,6 @@ body {
 }
 
 .chec-text {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -845,7 +842,6 @@ body {
   letter-spacing: 0.04em;
   text-decoration-line: underline;
   color: #4d5ae5;
-  margin-left: 2px;
 }
 
 .chec-icon-wrap {
